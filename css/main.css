@@ -1,0 +1,641 @@
+/* arabic */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Cairo-Regular.ttf"); }
+
+@font-face {
+  font-family: 'CairoBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Cairo-Bold.ttf"); }
+
+@font-face {
+  font-family: 'CairoSemiBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Cairo-SemiBold.ttf"); }
+
+body {
+  font-family: 'Cairo';
+  font-size: 1.14286rem; }
+
+.f-width {
+  width: 100%; }
+
+.nopadding {
+  padding: 0; }
+
+.more {
+  display: block;
+  color: #8cc63f;
+  font-size: 1.28571rem;
+  float: left;
+  margin-bottom: 2.85714rem; }
+
+.head {
+  font-size: 1.71429rem;
+  font-family: "CairoBold";
+  color: #008fd4;
+  margin-bottom: 2.85714rem;
+  margin-top: 0; }
+
+.dec {
+  font-size: 1.14286rem;
+  line-height: 2;
+  margin-bottom: 2.14286rem;
+  color: #333333; }
+
+.date {
+  font-size: 1.07143rem;
+  color: #bcbcbc; }
+
+.readMore {
+  background: #8cc63f;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #fff;
+  font-size: 1.42857rem;
+  font-family: 'CairoBold';
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px auto;
+  border: 2px solid #8cc63f; }
+  .readMore:hover {
+    text-decoration: none;
+    background: transparent;
+    color: #8cc63f; }
+
+.select {
+  position: relative;
+  display: inline-block; }
+  .select:after {
+    content: "\f0d7";
+    position: absolute;
+    width: 16px;
+    color: #bcbcbc;
+    font-weight: bold;
+    font-size: 10px;
+    left: 3px;
+    bottom: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 2;
+    font-family: FontAwesome; }
+  .select select {
+    position: relative;
+    width: 130px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    color: #333333;
+    border-color: #ededed;
+    outline: none;
+    font-size: 1.14286rem;
+    padding: 6px 10px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 39px; }
+
+header {
+  padding-bottom: 1.78571rem;
+  padding-top: 2rem; }
+  header .searchMainPage {
+    border-bottom: 2px solid #bcbcbc;
+    float: right;
+    margin-left: 50px;
+    margin-top: 15px; }
+    header .searchMainPage input {
+      border: 0;
+      outline: 0;
+      padding: 0.35714rem;
+      font-size: 1.14286rem;
+      font-family: 'CairoBold';
+      color: #bcbcbc; }
+    header .searchMainPage button {
+      background: transparent;
+      border: 0; }
+  header .nav {
+    text-align: center; }
+    header .nav li.active a {
+      color: #8cc63f; }
+    header .nav li a {
+      padding-top: 0;
+      padding-bottom: 0;
+      color: #333333;
+      font-family: 'CairoBold';
+      font-size: 1.28571rem;
+      transition: all 200ms ease-in-out; }
+      header .nav li a i {
+        display: block;
+        margin-bottom: 0.71429rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.78571rem; }
+      header .nav li a:hover {
+        color: #8cc63f;
+        background: transparent; }
+
+.lateastCorusesSlider {
+  background: url("../../images/bg-slide.jpg");
+  padding-top: 7.14286rem;
+  padding-bottom: 7.14286rem; }
+  .lateastCorusesSlider .lateastCorusesSlider--content .title {
+    font-family: 'CairoBold';
+    font-size: 2.28571rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    margin-bottom: 2rem; }
+  .lateastCorusesSlider .lateastCorusesSlider--content .dec {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2.28571rem; }
+  .lateastCorusesSlider .lateastCorusesSlider--content button {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px 30px;
+    background: transparent;
+    color: #fff;
+    font-family: 'CairoBold';
+    float: left;
+    margin: 30px 22px;
+    border-radius: 20px; }
+    .lateastCorusesSlider .lateastCorusesSlider--content button:last-child {
+      background: #fff;
+      color: #008fd4; }
+
+.brands {
+  background: #ededed; }
+
+.howToStart {
+  background: #f2f6fa;
+  padding-bottom: 4.28571rem;
+  padding-top: 5rem; }
+  .howToStart .howToStart--content span {
+    width: 4.28571rem;
+    height: 4.35714rem;
+    border-radius: 50%;
+    display: block;
+    padding-top: 2px; }
+    .howToStart .howToStart--content span i {
+      width: 3.57143rem;
+      height: 3.57143rem;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 3.57143rem;
+      font-size: 1.71429rem;
+      margin: auto;
+      display: block; }
+    .howToStart .howToStart--content span.question {
+      border: 2px solid #cee7f4; }
+      .howToStart .howToStart--content span.question i {
+        background: #cee7f4;
+        color: #008fd4; }
+    .howToStart .howToStart--content span.search {
+      border: 2px solid #deecd5; }
+      .howToStart .howToStart--content span.search i {
+        background: #deecd5;
+        color: #8cc63f; }
+    .howToStart .howToStart--content span.vcard {
+      border: 2px solid #cee7f4; }
+      .howToStart .howToStart--content span.vcard i {
+        background: #cee7f4;
+        color: #008fd4; }
+  .howToStart .howToStart--content .title {
+    font-size: 1.28571rem;
+    font-family: "CairoSemiBold";
+    color: #333333;
+    line-height: 1.2;
+    margin-top: 0; }
+  .howToStart .howToStart--content .dec {
+    font-size: 1.14286rem;
+    line-height: 1.5;
+    margin-bottom: 2.14286rem; }
+  .howToStart .howToStart--img {
+    margin-top: 7.14286rem;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    border: 6px solid #fff;
+    background: #bcbcbc;
+    height: 22.85714rem; }
+    .howToStart .howToStart--img img {
+      height: 100%; }
+
+.trainingAreas {
+  background: #f2f6fa;
+  padding-bottom: 4.28571rem; }
+  .trainingAreas .more {
+    margin-top: 2.14286rem; }
+  .trainingAreas .type {
+    font-size: 1.28571rem;
+    font-family: "CairoBold";
+    color: #1a355e; }
+  .trainingAreas .first {
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 2.14286rem; }
+  .trainingAreas .trainingAreas--img {
+    height: 260px; }
+    .trainingAreas .trainingAreas--img img {
+      height: 100%; }
+  .trainingAreas .trainingAreas--content .title {
+    font-size: 1.71429rem;
+    font-family: "CairoSemiBold";
+    color: #008fd4;
+    margin-bottom: 2.14286rem; }
+  .trainingAreas .trainingAreas--content .bref {
+    font-size: 1.28571rem;
+    color: #333333;
+    font-family: "CairoSemiBold"; }
+  .trainingAreas .trainingAreas-item {
+    width: calc(87% / 5);
+    height: 218px;
+    margin-right: 15px;
+    margin-left: 15px;
+    float: right; }
+    .trainingAreas .trainingAreas-item .content {
+      background: #fff;
+      box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.15);
+      padding: 25px 40px;
+      text-align: center;
+      height: 100%;
+      transition: all 300ms ease-in-out; }
+    .trainingAreas .trainingAreas-item:hover .content {
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+      background: #008fd4; }
+      .trainingAreas .trainingAreas-item:hover .content .type {
+        color: #fff; }
+    .trainingAreas .trainingAreas-item span {
+      width: 7.85714rem;
+      height: 7.92857rem;
+      border-radius: 50%;
+      display: block;
+      padding-top: 2px;
+      border: 2px solid #cee7f4;
+      margin: auto; }
+      .trainingAreas .trainingAreas-item span i {
+        width: 7.14286rem;
+        height: 7.14286rem;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 7.14286rem;
+        font-size: 2.28571rem;
+        margin: auto;
+        display: block;
+        background: #cee7f4;
+        color: #008fd4; }
+    .trainingAreas .trainingAreas-item .type {
+      margin-top: 20px;
+      display: block; }
+
+.coursesSoon {
+  padding-top: 3.57143rem;
+  padding-bottom: 3.57143rem; }
+  .coursesSoon .head {
+    float: right; }
+  .coursesSoon .select {
+    float: left;
+    margin-bottom: 2.85714rem; }
+  .coursesSoon .coursesSoonName {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms ease-in-out; }
+    .coursesSoon .coursesSoonName .coursesSoonName--img {
+      height: 155px; }
+      .coursesSoon .coursesSoonName .coursesSoonName--img img {
+        height: 100%; }
+    .coursesSoon .coursesSoonName .coursesSoonName--content .title {
+      font-size: 1.28571rem;
+      font-family: "CairoBold";
+      color: #1a355e;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: all 200ms ease-in-out; }
+    .coursesSoon .coursesSoonName:hover {
+      border-bottom-color: #8cc63f;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004); }
+      .coursesSoon .coursesSoonName:hover .title {
+        color: #008fd4; }
+
+.newsAndAlbums {
+  background: #f2f6fa;
+  padding-bottom: 4.28571rem;
+  padding-top: 4.28571rem; }
+  .newsAndAlbums .lateastNews .newsItem {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms ease-in-out; }
+    .newsAndAlbums .lateastNews .newsItem.first {
+      min-height: 32.14286rem; }
+      .newsAndAlbums .lateastNews .newsItem.first .newsItem--img {
+        height: 185px; }
+        .newsAndAlbums .lateastNews .newsItem.first .newsItem--img img {
+          height: 100%; }
+    .newsAndAlbums .lateastNews .newsItem.second {
+      min-height: 16.42857rem;
+      margin-bottom: 2.14286rem; }
+      .newsAndAlbums .lateastNews .newsItem.second .newsItem--img {
+        height: 14.28571rem;
+        width: 14.28571rem;
+        float: right;
+        margin-left: 10px; }
+        .newsAndAlbums .lateastNews .newsItem.second .newsItem--img img {
+          height: 100%; }
+      .newsAndAlbums .lateastNews .newsItem.second .dec {
+        margin-bottom: 0; }
+    .newsAndAlbums .lateastNews .newsItem .newsItem--content .date {
+      color: #008fd4;
+      margin-top: 1.42857rem;
+      margin-bottom: 1.07143rem; }
+    .newsAndAlbums .lateastNews .newsItem:hover {
+      border-bottom-color: #8cc63f;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004); }
+  .newsAndAlbums .albumsSlider .swiper-slide {
+    padding: 10px;
+    background: #fff; }
+    .newsAndAlbums .albumsSlider .swiper-slide .albumsSlider--img {
+      height: 265px; }
+    .newsAndAlbums .albumsSlider .swiper-slide .title {
+      font-size: 1.28571rem;
+      font-family: "CairoBold";
+      color: #008fd4;
+      text-align: center;
+      display: block;
+      margin-top: 1.42857rem;
+      margin-bottom: 1.42857rem;
+      transition: all 200ms ease-in-out; }
+    .newsAndAlbums .albumsSlider .swiper-slide .swiperNavi {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1.42857rem;
+      color: #008fd4; }
+      .newsAndAlbums .albumsSlider .swiper-slide .swiperNavi.albumsSlider-button-next {
+        right: 15px; }
+      .newsAndAlbums .albumsSlider .swiper-slide .swiperNavi.albumsSlider-button-prev {
+        left: 15px; }
+
+.testimonials {
+  background: #f2f6fa;
+  padding-bottom: 4.28571rem; }
+  .testimonials .testimonialsItem {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 2.14286rem;
+    transition: all 300ms ease-in-out;
+    background: #fff; }
+    .testimonials .testimonialsItem .testimonialsItem--img {
+      width: 70px;
+      height: 70px;
+      float: right;
+      margin-left: 15px; }
+      .testimonials .testimonialsItem .testimonialsItem--img img {
+        border-radius: 50%; }
+    .testimonials .testimonialsItem .testimonialsItem--content {
+      padding-top: 0.71429rem; }
+      .testimonials .testimonialsItem .testimonialsItem--content .name {
+        font-size: 1.28571rem;
+        font-family: 'CairoBold'; }
+      .testimonials .testimonialsItem .testimonialsItem--content .title {
+        font-size: 1.28571rem;
+        font-family: "CairoBold";
+        color: #008fd4;
+        display: block;
+        margin-top: 1.42857rem;
+        margin-bottom: 1.42857rem;
+        transition: all 200ms ease-in-out; }
+      .testimonials .testimonialsItem .testimonialsItem--content .dec {
+        float: right;
+        text-align: center;
+        width: 100%; }
+    .testimonials .testimonialsItem:hover {
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004); }
+      .testimonials .testimonialsItem:hover .title {
+        color: #008fd4; }
+
+.socialSection {
+  background: #f2f6fa;
+  padding-bottom: 4.28571rem;
+  padding-top: 4.28571rem; }
+
+.Sponsored {
+  background: #e6ebf0;
+  padding-bottom: 4.28571rem;
+  padding-top: 4.28571rem; }
+  .Sponsored .Sponsored--logo {
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05);
+    height: 126px;
+    border-bottom: 2px solid #fff;
+    transition: all 300ms ease-in-out;
+    background: #fff;
+    margin-bottom: 20px; }
+    .Sponsored .Sponsored--logo:hover {
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15), inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004);
+      border-bottom-color: #8cc63f; }
+
+.callToAction {
+  background: #8cc63f;
+  height: 410px; }
+  .callToAction .callToAction--content {
+    background: url("../../images/calltoaction.png") no-repeat;
+    padding-top: 7.14286rem;
+    padding-bottom: 7.14286rem;
+    height: 410px;
+    background-position-y: 100%;
+    text-align: center; }
+    .callToAction .callToAction--content .title {
+      font-size: 24px;
+      font-family: "CairoBold";
+      color: #fff; }
+    .callToAction .callToAction--content .dec {
+      font-size: 1.5rem;
+      color: #fff;
+      line-height: 2.28571rem;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .callToAction .callToAction--content button {
+      background-color: #333333;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      height: 42px;
+      color: #fff;
+      font-family: 'CairoBold';
+      border-radius: 20px;
+      border: 2px solid #333333;
+      transition: all 200ms ease-in-out; }
+      .callToAction .callToAction--content button:hover {
+        background: transparent;
+        border: 2px solid #fff; }
+
+footer {
+  padding-top: 4.28571rem;
+  padding-bottom: 2.85714rem; }
+  footer .footerLogo img {
+    margin: auto; }
+  footer .footerNav {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    text-align: center; }
+    footer .footerNav a {
+      color: #bcbcbc;
+      padding: 0 15px; }
+  footer .footerToActions button {
+    font-family: 'CairoBold';
+    color: #fff;
+    font-size: 1.14286rem;
+    padding: 10px 30px; }
+    footer .footerToActions button:first-child {
+      background: #8cc63f; }
+    footer .footerToActions button:last-child {
+      float: left; }
+  footer .FooterSocial {
+    text-align: center; }
+    footer .FooterSocial li a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 3px;
+      border: 1px solid #bcbcbc;
+      color: #bcbcbc;
+      font-size: 15px;
+      transition: all 200ms ease-in-out; }
+      footer .FooterSocial li a:hover {
+        border: 1px solid transparent; }
+        footer .FooterSocial li a:hover.facebook {
+          background: #415f9b;
+          color: #fff; }
+        footer .FooterSocial li a:hover.twitter {
+          background: #00bbf2;
+          color: #fff; }
+        footer .FooterSocial li a:hover.instagram {
+          background: #517fa4;
+          color: #fff; }
+        footer .FooterSocial li a:hover.linkedin {
+          background: #007bb6;
+          color: #fff; }
+        footer .FooterSocial li a:hover.youtube {
+          background: #dd4b39;
+          color: #fff; }
+        footer .FooterSocial li a:hover.googlep {
+          background: #e3401d;
+          color: #fff; }
+  footer .subscribeForm {
+    font-size: 1.07143rem;
+    position: relative; }
+    footer .subscribeForm label {
+      color: #bcbcbc;
+      margin-top: 12px; }
+    footer .subscribeForm input {
+      border: 1px solid #ededed;
+      width: 75%;
+      padding: 10px;
+      border-radius: 3px;
+      float: left;
+      color: #bcbcbc;
+      outline: 0; }
+    footer .subscribeForm button {
+      background: transparent;
+      border: none;
+      -webkit-transform: rotate(255deg);
+      -ms-transform: rotate(255deg);
+      transform: rotate(255deg);
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      color: #bcbcbc; }
+  footer .sparate {
+    border-top: 2px solid #ededed;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  footer .copyRights {
+    color: #666666; }
+    footer .copyRights a {
+      color: #008fd4; }
+
+.social-nav {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 10px auto; }
+  .social-nav li {
+    display: inline-block; }
+  .social-nav a {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 48px;
+    background: #000;
+    position: relative;
+    transition: all 500ms ease-in-out; }
+
+.model-0 {
+  position: fixed;
+  transition: all 500ms ease-in-out;
+  left: 0;
+  top: 150px; }
+  .model-0 li {
+    float: none;
+    display: block; }
+  .model-0 a:hover {
+    padding-left: 20px;
+    width: 65px; }
+  .model-0 .twitter {
+    background: #00bbf2; }
+  .model-0 .facebook {
+    background: #415f9b; }
+  .model-0 .google-plus {
+    background: #e3401d; }
+  .model-0 .linkedin {
+    background: #007bb6; }
+  .model-0 .instagram {
+    background: #517fa4; }
+  .model-0 .youtube {
+    background: #dd4b39; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp; }

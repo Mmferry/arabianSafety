@@ -1,0 +1,765 @@
+@import 'variables.scss';
+
+body {
+    font-family: 'Cairo';
+    font-size: rem(16);
+}
+
+.f-width{
+	width: 100%;
+}
+
+.nopadding{
+	padding: 0;
+}
+
+.more{
+	display: block;
+	color: $secondary-base;
+	font-size: rem(18);
+	float: left;
+	margin-bottom: rem(40);
+}
+
+.head{
+	font-size: rem(24);
+	font-family: "CairoBold";
+	color: $primary-base;
+	margin-bottom: rem(40);
+	margin-top: 0;
+}
+
+.dec{
+  	font-size: rem(16);
+  	line-height: 2;
+  	margin-bottom: rem(30);
+  	color: $link-color;
+}
+
+.date{
+	font-size: rem(15);
+	color: $gray;
+}
+
+.readMore{
+	background: $secondary-base;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+	transition: all 200ms ease-in-out;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	color: $white;
+	font-size: rem(20);
+	font-family: 'CairoBold';
+	text-align: center;
+	border-radius: 20px;
+	margin: 20px auto;
+	border: 2px solid $secondary-base;
+	&:hover{
+		text-decoration: none;
+		background: transparent;
+		color: $secondary-base;
+	}
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    &:after {
+        content: "\f0d7";
+        position: absolute;
+        width: 16px;
+        color: $gray;
+        font-weight: bold;
+        font-size: 10px;
+        left: 3px;
+        bottom: 15px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        pointer-events: none;
+        z-index: 2;
+        font-family: $fa;
+    }
+    select {
+        position: relative;
+        width: 130px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        color: $link-color;
+        border-color: $light-gray;
+        outline: none;
+        font-size: rem(16);
+        padding: 6px 10px;
+        margin: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        height: 39px;
+    }
+}
+
+
+header {
+	padding-bottom: rem(25);
+	padding-top: rem(28);
+	.searchMainPage{
+		border-bottom: 2px solid $gray;
+		float: right;
+		margin-left: 50px;
+	   	margin-top: 15px;
+		input{
+			border: 0;
+			outline: 0;
+		    padding: rem(5);
+   			font-size: rem(16);
+   			font-family: 'CairoBold';
+   			color: $gray;
+		}
+		button{
+			background: transparent;
+			border: 0;
+		}
+	}
+	.nav{
+		text-align: center;
+		li{
+			&.active{
+				a{
+					color: $secondary-base;
+				}
+			}
+			a{
+				padding-top : 0;
+				padding-bottom : 0;
+				color : $link-color;
+				font-family: 'CairoBold';
+				font-size: rem(18);
+				transition : all 200ms ease-in-out;
+				i{
+					display: block;
+					margin-bottom: rem(10);
+					margin-right: auto;
+					margin-left: auto;
+					font-size: rem(25);
+				}
+				&:hover{
+					color: $secondary-base;
+					background: transparent;
+				}
+			}
+		}
+	}
+}
+
+
+.lateastCorusesSlider{
+	background: url('#{$img-path}/bg-slide.jpg');
+	padding-top: rem(100);
+	padding-bottom: rem(100);
+	.lateastCorusesSlider--content{
+		.title{
+			font-family: 'CairoBold';
+			font-size: rem(32);
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+			color: $white;
+			margin-bottom: rem(28);
+		}
+		.dec{
+			font-size: rem(21);
+			color: $white;
+			line-height: rem(32);
+		}
+		button{
+  			border: 2px solid $white;
+  			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  			padding: 16px 30px;
+  			background: transparent;
+  			color: $white;
+  			font-family: 'CairoBold';
+  			float: left;
+  			margin: 30px 22px;
+  			border-radius: 20px;
+  			&:last-child{
+  				background: $white;
+  				color: $primary-base;
+  			}
+		}
+	}
+}
+
+
+.brands{
+	background: $light-gray;
+}
+
+
+.howToStart{
+	background: #f2f6fa;
+	padding-bottom: rem(60);
+	padding-top: rem(70);
+	.howToStart--content{
+		span{
+			width: rem(60);
+			height: rem(61);
+			border-radius: 50%;
+			display: block;
+		    padding-top: 2px;
+			i{
+				width: rem(50);
+				height: rem(50);
+				border-radius: 50%;
+				text-align: center;
+				line-height: rem(50);
+				font-size: rem(24);
+			    margin: auto;
+    			display: block;
+			}
+			&.question{
+				border: 2px solid #cee7f4;
+				i{
+					background: #cee7f4;
+					color: $primary-base;
+				}
+			}
+			&.search{
+				border: 2px solid #deecd5;
+				i{
+					background: #deecd5;
+					color: $secondary-base;
+				}
+			}
+			&.vcard{
+				border: 2px solid #cee7f4;
+				i{
+					background: #cee7f4;
+					color: $primary-base;
+				}
+			}
+		}
+		.title{
+		  font-size: rem(18);
+		  font-family: "CairoSemiBold";
+		  color: $link-color;
+		  line-height: 1.2;
+		  margin-top: 0;
+		}
+		.dec{
+		  font-size: rem(16);
+		  line-height: 1.5;
+		  margin-bottom: rem(30);
+		}
+	}
+	.howToStart--img{
+		margin-top: rem(100);
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+		border: 6px solid $white;
+		background: $gray;
+		height: rem(320);
+		img{
+			height: 100%;
+		}
+	}
+}
+
+
+.trainingAreas{
+	background: #f2f6fa;
+	padding-bottom: rem(60);
+	.more{
+		margin-top: rem(30);
+	}
+	.type{
+	  	font-size: rem(18);
+	  	font-family: "CairoBold";
+	  	color: $primary-darker;
+	}
+	.first{
+		background: $white;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: rem(30);
+	}
+	.trainingAreas--img{
+		height: 260px;
+		img{
+			height: 100%;
+		}
+	}
+	.trainingAreas--content{
+		.title{
+			font-size: rem(24);
+			font-family: "CairoSemiBold";
+			color: $primary-base;
+			margin-bottom: rem(30);
+		}
+		.bref{
+			font-size: rem(18);
+			color: $link-color;
+			font-family: "CairoSemiBold";
+		}
+		
+	}
+	.trainingAreas-item{
+		width: calc(87% / 5);
+		height: 218px;
+		margin-right: 15px;
+		margin-left: 15px;
+		float: right;
+		.content{
+			background: $white;
+  			box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.15);
+  			padding: 25px 40px;
+  			text-align: center;
+  			height: 100%;
+  			transition: all 300ms ease-in-out;
+		}
+		&:hover{
+			.content{
+				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+				background: $primary-base;
+				.type{
+					color: $white;
+				}
+			}
+		}
+		span{
+			width: rem(110);
+			height: rem(111);
+			border-radius: 50%;
+			display: block;
+		    padding-top: 2px;
+		    border: 2px solid #cee7f4;
+		    margin: auto;
+			i{
+				width: rem(100);
+				height: rem(100);
+				border-radius: 100%;
+				text-align: center;
+				line-height: rem(100);
+				font-size: rem(32);
+			    margin: auto;
+    			display: block;
+    			background: #cee7f4;
+				color: $primary-base;
+			}
+		}
+		.type{
+			margin-top: 20px;
+			display: block;
+		}
+	}
+}
+
+
+.coursesSoon{
+	padding-top: rem(50);
+	padding-bottom: rem(50);
+	.head{
+		float: right;
+	}
+	.select{
+		float: left;
+		margin-bottom: rem(40);
+	}
+	.coursesSoonName{
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  		padding: 10px;
+  		border-bottom: 2px solid #fff;
+  		transition: all 300ms ease-in-out;
+		.coursesSoonName--img{
+			height: 155px;
+			img{
+				height: 100%;
+			}
+		}
+		.coursesSoonName--content{
+			.title{
+				font-size: rem(18);
+	  			font-family: "CairoBold";
+	  			color: $primary-darker;
+	  			margin-top: 20px;
+	  			margin-bottom: 20px;
+	  			transition: all 200ms ease-in-out;
+			}
+
+		}
+		&:hover{
+			border-bottom-color: $secondary-base;
+			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15),inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004);
+			.title{
+				color: $primary-base;
+			}
+		}
+	}
+}
+
+
+.newsAndAlbums{
+	background: #f2f6fa;
+	padding-bottom: rem(60);
+	padding-top: rem(60);
+
+	.lateastNews{
+		.newsItem{
+			background-color: $white;
+			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+	  		padding: 10px;
+	  		border-bottom: 2px solid #fff;
+	  		transition: all 300ms ease-in-out;
+	  		&.first{
+	  			min-height: rem(450);
+				.newsItem--img{
+					height: 185px;
+					img{
+						height: 100%;
+					}
+				}
+			}
+			&.second{
+				min-height: rem(230);
+				margin-bottom: rem(30);
+				.newsItem--img{
+					height: rem(200);
+					width: rem(200);
+					float: right;
+					margin-left: 10px;
+					img{
+						height: 100%;
+					}
+				}
+				.dec{
+					margin-bottom: 0;
+				}
+			}
+			.newsItem--content{
+				.date{
+					color: $primary-base;
+					margin-top: rem(20);
+					margin-bottom: rem(15);
+				}
+			}
+			&:hover{
+				border-bottom-color: $secondary-base;
+				box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15),inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004);
+			}
+		}
+	}
+
+	.albumsSlider{
+		.swiper-slide{
+			padding: 10px;
+			background: $white;
+			.albumsSlider--img{
+				height: 265px;
+			}
+			.title{
+				font-size: rem(18);
+	  			font-family: "CairoBold";
+	  			color: $primary-base;
+	  			text-align: center;
+    			display: block;
+	  			margin-top: rem(20);
+	  			margin-bottom: rem(20);
+	  			transition: all 200ms ease-in-out;
+			}
+			.swiperNavi{
+				position: absolute;
+				bottom: 20px;
+				font-size: rem(20);
+				color: $primary-base;
+				&.albumsSlider-button-next {
+					right: 15px;
+				}
+				&.albumsSlider-button-prev {
+					left: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+.testimonials{
+	background: #f2f6fa;
+	padding-bottom: rem(60);
+	.testimonialsItem{
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  		padding: rem(30);
+  		transition: all 300ms ease-in-out;
+  		background: $white;
+		.testimonialsItem--img{
+			width: 70px;
+			height: 70px;
+			float: right;
+			margin-left: 15px;
+			img{
+				border-radius: 50%;
+			}
+		}
+		.testimonialsItem--content{
+			padding-top: rem(10);
+			.name{
+  				font-size: rem(18);
+  				font-family: 'CairoBold';
+			}
+			.title{
+				font-size: rem(18);
+	  			font-family: "CairoBold";
+	  			color: $primary-base;
+    			display: block;
+	  			margin-top: rem(20);
+	  			margin-bottom: rem(20);
+	  			transition: all 200ms ease-in-out;
+			}
+			.dec{
+				float: right;
+    			text-align: center;
+    			width: 100%;
+			}
+		}
+		&:hover{
+			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15),inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004);
+			.title{
+				color: $primary-base;
+			}
+		}
+	}
+}
+
+
+
+.socialSection{
+	background: #f2f6fa;
+	padding-bottom: rem(60);
+	padding-top: rem(60);
+}
+
+
+.Sponsored{
+	background: #e6ebf0;
+	padding-bottom: rem(60);
+	padding-top: rem(60);
+
+	.Sponsored--logo{
+		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.05);
+  		height: 126px;
+		border-bottom: 2px solid #fff;
+  		transition: all 300ms ease-in-out;
+  		background: $white;
+  		margin-bottom: 20px;
+  		&:hover{
+  			box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15),inset 0px -2px 0px 0px rgba(140, 198, 63, 0.004);
+  			border-bottom-color: $secondary-base;
+  		}
+	}
+}
+
+
+.callToAction{
+	background: $secondary-base;
+	height: 410px;
+	.callToAction--content{
+		background: url('#{$img-path}/calltoaction.png') no-repeat;
+		padding-top: rem(100);
+		padding-bottom: rem(100);
+		height: 410px;
+	    background-position-y: 100%;
+	    text-align: center;
+	    .title {
+		  	font-size: 24px;
+		  	font-family: "CairoBold";
+		  	color: $white;
+		}
+		.dec{
+			font-size: rem(21);
+			color: $white;
+			line-height: rem(32);
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		button{
+		  	background-color: $link-color;
+		  	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+		  	width: 150px;
+		  	height: 42px;
+ 			color: $white;
+ 			font-family: 'CairoBold';
+ 			border-radius: 20px;
+ 			border: 2px solid $link-color;
+ 			transition: all 200ms ease-in-out;
+ 			&:hover{
+				background: transparent;
+				border: 2px solid $white;
+ 			}
+		}
+	}
+}
+
+
+footer{
+	padding-top: rem(60);
+	padding-bottom: rem(40);
+	.footerLogo{
+		img{
+			margin: auto;
+		}
+	}
+	.footerNav{
+		margin-top: 35px;
+		margin-bottom: 40px;
+	    text-align: center;
+	    a{
+	    	color: $gray;
+	    	padding: 0 15px;
+	    }
+	}
+	.footerToActions{
+		button{
+			font-family: 'CairoBold';
+			color: $white;
+			font-size: rem(16);
+			padding: 10px 30px;
+			&:first-child{
+				background: $secondary-base;
+			}
+			&:last-child{
+				float: left;
+			}
+		}
+	}
+	.FooterSocial{
+		text-align: center;
+		li{
+			a{
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				display: inline-block;
+				border-radius: 3px;
+				border: 1px solid $gray;
+				color: $gray;
+				font-size: 15px;
+				transition: all 200ms ease-in-out;
+				&:hover{
+					border: 1px solid transparent;
+					&.facebook{background: $facebookClr;color: $white;}
+					&.twitter{background: $twitterClr;color: $white;}
+					&.instagram{background: $instagramClr;color: $white;}
+					&.linkedin{background: $linkedinClr;color: $white;}
+					&.youtube{background: $youtubeClr;color: $white;}
+					&.googlep{background: $goolepClr;color: $white;}
+				}
+			}
+		}
+	}
+	.subscribeForm{
+		font-size: rem(15);
+		position: relative;
+		label{
+			color: $gray;
+		    margin-top: 12px;
+		}
+		input{
+			border: 1px solid $light-gray;
+		    width: 75%;
+		    padding: 10px;
+		    border-radius: 3px;
+		    float: left;
+		    color: $gray;
+		    outline: 0;
+		}
+		button{
+			background: transparent;
+			border: none;
+		    transform: rotate(255deg);
+		    position: absolute;
+		    left: 10px;
+		    top: 15px;
+		    color: $gray;
+		}
+	}
+	.sparate{
+		border-top: 2px solid $light-gray;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.copyRights{
+		color: #666666;
+		a{color: $primary-base;}
+	}
+}
+
+.social-nav{
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin:10px auto;
+  li{
+    display: inline-block;
+  }
+  a {
+    display: inline-block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 48px;
+    background: #000;
+    position: relative;
+    transition: all 500ms ease-in-out;
+  }
+}
+
+
+.model-0{
+  position: fixed;
+  transition: all 500ms ease-in-out;
+  left:0;
+  top: 150px;
+  li{
+    float: none;
+    display: block;
+  }
+  a{
+    &:hover{
+    padding-left: 20px;
+    width:65px;
+    }
+  }
+  .twitter{ background:$twitterClr}
+  .facebook{ background:$facebookClr}
+  .google-plus{background:$goolepClr}
+  .linkedin{background:$linkedinClr}
+  .instagram{ background:$instagramClr}
+  .youtube{ background:$youtubeClr}
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}

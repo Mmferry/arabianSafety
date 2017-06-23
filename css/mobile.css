@@ -1,0 +1,114 @@
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 980px) 
+{
+	header .searchMainPage{
+		float: none;
+		margin-top: 20px;
+    	margin-bottom: 30px;
+    	margin-right: 50px;
+	}
+	.trainingAreas .trainingAreas-item {
+    	width: calc(96% / 6);
+    }
+    .trainingAreas .trainingAreas-item .content{
+    	padding: 25px 20px;
+    }
+    .coursesSoon .coursesSoonName{
+    	margin-bottom: 30px;
+    }
+    .testimonials .testimonialsItem{
+    	margin-bottom: 30px;
+    }
+    .socialSection--youtube,
+    .socialSection--instagram,
+    .socialSection--twitter{
+    	margin-bottom: 30px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px) 
+{
+	.navbar-toggle{
+		border: 1px solid #008fd4;
+	}
+	.navbar-toggle .icon-bar{
+		background: #008fd5;
+	}
+	header .nav li a{
+		padding-bottom: 10px;
+	}
+	.trainingAreas .trainingAreas-item {
+    	width: calc(87% / 2);
+    	margin-bottom: 30px;
+	}
+	.newsAndAlbums .lateastNews .newsItem.first{
+		margin-bottom: 20px;
+	}
+	.testimonials .testimonialsItem{
+		margin-bottom: 30px;
+	}
+	.footerToActions{
+		margin-top: 30px;
+	}
+	.FooterSocial{
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) 
+{
+	.navbar-toggle{
+		border: 1px solid #008fd4;
+		margin: 10px 0;
+	}
+	.navbar-toggle .icon-bar{
+		background: #008fd5;
+	}
+	header .nav li a{
+		padding-bottom: 10px;
+	}
+	.trainingAreas .trainingAreas-item {
+	    width: calc(90% / 1);
+    	margin-bottom: 30px;
+	}
+	.newsAndAlbums .lateastNews .newsItem.first{
+		margin-bottom: 20px;
+	}
+	.testimonials .testimonialsItem{
+		margin-bottom: 30px;
+	}
+	.footerToActions{
+		margin-top: 30px;
+	}
+	.FooterSocial{
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	.lateastCorusesSlider .lateastCorusesSlider--content button{
+	   	padding: 10px;
+	    margin: 10px 5px;
+	    font-size: 13px;
+	}
+	.lateastCorusesSlider .lateastCorusesSlider--content .title{
+		font-size: 16px;
+	}
+	.lateastCorusesSlider .lateastCorusesSlider--content .dec{
+		font-size: 13px;
+	}
+	footer .footerToActions button {
+		padding: 10px;
+	}
+	footer .FooterSocial li{
+		padding-right: 0;
+	}
+	.navbar-header{
+		padding:  15px;
+		clear: both;
+	}
+}
